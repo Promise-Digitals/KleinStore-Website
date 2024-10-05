@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------- styling scrollbar -------------- */
+::-webkit-scrollbar{
+  width: 14px;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+}
+::-webkit-scrollbar-thumb{
+  background: #ff9c78;
+}
