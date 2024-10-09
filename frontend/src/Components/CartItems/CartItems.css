@@ -1,0 +1,43 @@
+.cartitems{
+    margin: 100px 150px;
+    font-family: "Outfits", sans-serif;
+}
+
+.cartitems hr{
+    height: 1px;
+    background: #888;
+    border: none;
+}
+
+.cartitems-format-main{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0;
+    color: #444;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cartitems-format{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.carticon-product-icon{
+    height: 60px;
+}
+
+.cartitems-remove-icon{
+    width: 12px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+.cartitems-quantity{
+    width: 60px;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
