@@ -1,21 +1,29 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import './Navbar.css';
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom';
 import { ShopContext } from '../../Context/ShopContext';
+import nav_dropdown from '../Assets/nav-dropdown.png';
 
 const Navbar = () => {
 
     const [menu, setMenu] = useState("shop");
     const {getTotalCartItem} = useContext(ShopContext);
+    const menuRef = useRef();
+
+    const dropdown_toggle = (e) => {
+        menuRef.current.classList.toggle('nav-menu-visible');
+        e.target.classList.toggle('open');
+    }
 
     return (
         <div className='navbar'>
             <div className="nav-logo">
                 <img src={logo} alt="" />
             </div>
-            <ul className="nav-menu">
+            <img className='nav-dropdown' src={nav_dropdown} onClick={dropdown_toggle} alt="" />
+            <ul className="nav-menu" ref={menuRef}>
                 <li onClick={()=>{setMenu("shop")}}><Link to='/' style={{textDecoration: 'none', color: '#222'}}>Shop</Link> {menu === "shop" ? <hr /> : <></>}</li>
                 <li onClick={()=>{setMenu("men")}}><Link to='/men' style={{textDecoration: 'none', color: '#222'}}>Men</Link> {menu === "men" ? <hr /> : <></>}</li>
                 <li onClick={()=>{setMenu("women")}}><Link to='/women' style={{textDecoration: 'none', color: '#222'}}>Women</Link> {menu === "women" ? <hr /> : <></>}</li>
