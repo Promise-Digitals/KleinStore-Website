@@ -1,8 +1,8 @@
 .offers{
-    width: 80%;
+    width: 85%;
     height: 60vh;
     display: flex;
-    margin: auto;
+    margin: 50px auto;
     padding: 0px 140px;
     margin-bottom: 150px;
     background: linear-gradient(180deg, #fcdbcf, #f0fff422 60%);
@@ -50,4 +50,122 @@
 
 .offers-right img{
     width: 85%;
+}
+
+
+@media(max-width: 1280px){
+    .offers{
+        padding: 0px 80px;
+        margin-bottom: 120px;
+    }
+
+    .offers-left h1{
+        font-size: 40px;
+    }
+
+    .offers-left p{
+        font-size: 18px;
+    }
+
+    .offers-right img{
+        width: 75%;
+    }
+
+    .offers-left button{
+        width: 220px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .offers-right{
+        padding-top: 30px;
+    }
+}
+
+
+@media(max-width: 1020px){
+    .offers{
+        padding: 0px 60px;
+        margin-bottom: 100px;
+        height: 40vh;
+    }
+
+    .offers-left h1{
+        font-size: 30px;
+    }
+
+    .offers-left p{
+        font-size: 16px;
+    }
+
+    .offers-right img{
+        width: 55%;
+    }
+
+    .offers-left button{
+        width: 160px;
+        height: 40px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .offers-right{
+        padding-top: 20px;
+    }
+}
+
+
+@media(max-width: 800px){
+    .offers{
+        margin-bottom: 80px;
+    }
+
+    .offers-left h1{
+        font-size: 25px;
+    }
+
+    .offers-left p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .offers-right img{
+        width: 45%;
+    }
+
+    .offers-left button{
+        width: 140px;
+        height: 30px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}
+
+
+@media(max-width: 500px){
+    .offers{
+        height: 25vh;
+        margin-bottom: 50px;
+        padding: 0px 30px;
+    }
+
+    .offers-left h1{
+        font-size: 16px;
+    }
+
+    .offers-left p{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .offers-right img{
+        width: 60%;
+    }
+
+    .offers-left button{
+        width: 120px;
+        height: 25px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
 }

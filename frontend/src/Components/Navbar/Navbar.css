@@ -118,6 +118,10 @@
         padding: 12px 30px;
     }
 
+    .nav-logo img{
+        width: 90px;
+    }
+
     .nav-menu{
         gap: 25px;
     }
@@ -140,6 +144,10 @@
 @media(max-width: 800px){
     .navbar{
         padding: 10px 0px;
+    }
+
+    .nav-logo img{
+        width: 80px;
     }
 
     .nav-dropdown{
@@ -172,6 +180,10 @@
     .navbar{
         padding: 8px 0px;
         gap: 0px;
+    }
+
+    .nav-logo img{
+        width: 60px;
     }
 
     .nav-menu{
