@@ -59,3 +59,32 @@
     height: 2px;
     background: #dedddd;
 }
+
+
+@media(max-width: 800px){
+    .footer{
+        gap: 20px;
+    }
+
+    .footer-logo img{
+        width: 130px;
+    }
+
+    .footer-links{
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .footer-icons-container{
+        padding: 6px;
+        padding-bottom: 4px;
+    }
+
+    .footer-social-icons img{
+        width: 22px;
+    }
+
+    .footer-copyright{
+        font-size: 13px;
+    }
+}
