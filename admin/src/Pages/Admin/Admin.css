@@ -1,0 +1,10 @@
+.admin{
+    display: flex;
+    font-family: "Outfits", sans-serif;
+}
+
+@media(max-width: 800px){
+    .admin{
+        flex-direction: column;
+    }
+}
