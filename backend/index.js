@@ -132,7 +132,7 @@ app.get('/allproducts' , async (req, res) => {
 
 // Schema creating for User Model
 const Users = mongoose.model('Users', {
-    name: {
+    username: {
         type: String
     },
     email: {
@@ -166,7 +166,7 @@ app.post('/signup', async (req, res) => {
     }
     
     const user = new Users({
-        name: req.body.name,
+        username: req.body.username,
         email: req.body.email,
         password: req.body.password,
         cartData: cart

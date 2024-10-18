@@ -5,6 +5,7 @@
     box-shadow: 0 1px 3px -2px #000;
     font-family: "Outfit", sans-serif;
     align-items: center;
+    z-index: 50;
 }
 
 .nav-logo img{
