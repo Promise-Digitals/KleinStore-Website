@@ -4,8 +4,6 @@ const jwt = require('jsonwebtoken');
 const multer = require('multer');
 const path = require('path')
 const cors = require('cors');
-const { type } = require('os');
-const { console } = require('inspector');
 
 const app = express();
 const port = 4000;
